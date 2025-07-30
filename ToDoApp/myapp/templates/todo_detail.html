@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="details-container">
+
+  <h2>To Do Details</h2>
+
+  <p><strong>Title:</strong> {{ todo.title }}</p>
+  <p><strong>Description:</strong> {{ todo.description }}</p>
+
+  <p><strong>Completed:</strong>
+    {% if todo.completed %}
+      <span class="yes">YES</span>
+    {% else %}
+      <span class="no">NO</span>
+    {% endif %}
+  </p>
+
+  <p><strong>Created at:</strong> {{ todo.created_at }}</p>
+  <p><strong>Updated at:</strong> {{ todo.updated_at }}</p>
+
+</div>
+{% endblock %}
