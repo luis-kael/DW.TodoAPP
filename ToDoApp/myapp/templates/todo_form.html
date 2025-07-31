@@ -3,7 +3,7 @@
 
 <h1>Create Form</h1>
 
-<a href="{% url 'TodoList' %}"> <= List</a>
+<a href="{% url 'TodoList' %}">Back To The Main Page</a>
 
 <form action="{% url 'TodoCreate' %}" method="post">
     {% csrf_token %}
